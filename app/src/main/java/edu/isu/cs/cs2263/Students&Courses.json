@@ -1,0 +1,35 @@
+{
+  "Student": [
+	
+     { 
+        "firstname": "Isaac", 
+        "lastname": "Griffith",
+	"courses": [
+		"CS 1181 intro to Programming",
+		"CS 2263 Advanced OO Programming",
+		"CS 4423 Software Evolution"
+	]
+     }, 
+	
+     {  
+        "firstname": "Bob", 
+        "lastname": "Sampson",
+	"courses": [
+		"CS 1181 intro to Programming",
+		"CS 2263 Advanced OO Programming",
+		"CS 4423 Software Evolution",
+		"MATH 1175 Calculus II"
+	]  
+     },
+     
+     {  
+        "firstname": "Sarah", 
+        "lastname": "James", 
+	"courses": [
+		"CS 1181 intro to Programming",
+		"MATH 2275 Linear Algebra",
+		"MATH 1187 Applied Discrete Structures"
+	] 
+     }
+  ]   
+}

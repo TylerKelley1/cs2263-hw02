@@ -3,12 +3,76 @@
  */
 package edu.isu.cs.cs2263;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
+
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Pos;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.Button;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.control.ListView;
+
+
+public class App extends Application{
+
+    public App() {}
+    private static class Helper{
+        private static final App INSTANCE = new App();
+
+    }
+    public static App getInstance(){
+        return Helper.INSTANCE;
+    }
+
+    IOManager Students = new IOManager();
+    Student People = new Student();
+
+    @Override
+    public void start(Stage stage) throws Exception{
+        stage.setTitle("JavaFX Application for Homework 2");
+
+        FlowPane display = new FlowPane();
+
+        Label label = new Label("Is Taking");
+        label.setMaxSize(600,600);
+        //stage.setScene(sceneLabel);
+
+        ListView studentsList = new ListView();
+        studentsList.setMaxSize(500, 300);
+
+        ListView courses = new ListView();
+        courses.setMaxSize(800,300);
+
+
+        Button button = new Button("Load Data");
+        button.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                studentsList.getItems().clear();
+                studentsList.getItems().add("Hello");
+                //Students.readData("Student&Courses.json");
+                studentsList.getItems().add(Students.readData("employees.json"));
+            }
+        });
+
+        display.getChildren().add(studentsList);
+        display.getChildren().add(label);
+        display.getChildren().add(courses);
+        display.getChildren().add(button);
+        display.setAlignment(Pos.CENTER);
+        display.setHgap(25);
+        display.setVgap(25);
+
+        Scene scene = new Scene(display, 675,400);
+        stage.setScene(scene);
+
+        stage.show();
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Application.launch(args);
     }
 }
