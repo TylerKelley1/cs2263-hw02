@@ -29,6 +29,7 @@ public class App extends Application{
 
     IOManager Students = new IOManager();
     Student People = new Student();
+    String filePath = "C:/Users/Tyler Kelley//Desktop//CS_2263/cs2263_hw02/cs2263-hw02/employees.json";
 
     @Override
     public void start(Stage stage) throws Exception{
@@ -40,12 +41,14 @@ public class App extends Application{
         label.setMaxSize(600,600);
         //stage.setScene(sceneLabel);
 
-        ListView studentsList = new ListView();
-        studentsList.setMaxSize(500, 300);
-
         ListView courses = new ListView();
         courses.setMaxSize(800,300);
 
+        ListView studentsList = new ListView();
+        studentsList.setMaxSize(500, 300);
+        studentsList.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) ->
+        {courses.getItems().clear();
+            courses.getItems().add("World");});
 
         Button button = new Button("Load Data");
         button.setOnAction(new EventHandler<ActionEvent>() {
@@ -54,7 +57,7 @@ public class App extends Application{
                 studentsList.getItems().clear();
                 studentsList.getItems().add("Hello");
                 //Students.readData("Student&Courses.json");
-                studentsList.getItems().add(Students.readData("employees.json"));
+                studentsList.getItems().add(Students.readData(filePath));
             }
         });
 

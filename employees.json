@@ -1,1 +1,11 @@
-[{"employee":{"firstName":"Isaac","lastName":"Griffith"}},{"employee":{"firstName":"Bob","lastName":"Sampson"}},{"employee":{"firstName":"Sarah","lastName":"James"}}]
+[
+  {"Student":
+  {"firstName":"Isaac","lastName":"Griffith"}
+  },
+  {"Student":
+  {"firstName":"Bob","lastName":"Sampson"}
+  },
+  {"Student":
+  {"firstName":"Sarah","lastName":"James"}
+  }
+]
