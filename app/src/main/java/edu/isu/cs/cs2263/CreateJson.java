@@ -11,39 +11,39 @@ public class CreateJson {
     public static void main(String args[]) {
         {
             //First Employee
-            JSONObject employeeDetails = new JSONObject();
-            employeeDetails.put("firstName", "Isaac");
-            employeeDetails.put("lastName", "Griffith");
+            JSONObject studentDetails = new JSONObject();
+            studentDetails.put("firstName", "Isaac");
+            studentDetails.put("lastName", "Griffith");
 
-            JSONObject employeeObject = new JSONObject();
-            employeeObject.put("employee", employeeDetails);
+            JSONObject studentObject = new JSONObject();
+            studentObject.put("employee", studentDetails);
 
             //Second Employee
-            JSONObject employeeDetails2 = new JSONObject();
-            employeeDetails2.put("firstName", "Bob");
-            employeeDetails2.put("lastName", "Sampson");
+            JSONObject studentDetails2 = new JSONObject();
+            studentDetails2.put("firstName", "Bob");
+            studentDetails2.put("lastName", "Sampson");
 
-            JSONObject employeeObject2 = new JSONObject();
-            employeeObject2.put("employee", employeeDetails2);
+            JSONObject studentObject2 = new JSONObject();
+            studentObject2.put("employee", studentDetails2);
 
             //Third Employee
-            JSONObject employeeDetails3 = new JSONObject();
-            employeeDetails3.put("firstName", "Sarah");
-            employeeDetails3.put("lastName", "James");
+            JSONObject studentDetails3 = new JSONObject();
+            studentDetails3.put("firstName", "Sarah");
+            studentDetails3.put("lastName", "James");
 
             JSONObject employeeObject3 = new JSONObject();
-            employeeObject3.put("employee", employeeDetails3);
+            employeeObject3.put("employee", studentDetails3);
 
             //Add employees to list
-            JSONArray employeeList = new JSONArray();
-            employeeList.add(employeeObject);
-            employeeList.add(employeeObject2);
-            employeeList.add(employeeObject3);
+            JSONArray studentList = new JSONArray();
+            studentList.add(studentObject);
+            studentList.add(studentObject2);
+            studentList.add(employeeObject3);
 
             //Write JSON file
-            try (FileWriter file = new FileWriter("employees.json")) {
+            try (FileWriter file = new FileWriter("students.json")) {
                 //We can write any JSONArray or JSONObject instance to the file
-                file.write(employeeList.toJSONString());
+                file.write(studentList.toJSONString());
                 file.flush();
 
             } catch (IOException e) {
