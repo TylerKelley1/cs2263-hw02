@@ -1,7 +1,7 @@
 /**
  * @author Tyler Kelley
  * @author CS2263 Homework 2 Isaac Griffith
- * @version 2.0.0
+ * @version 2.1.0
  * @since 1.0.0
  */
 package edu.isu.cs.cs2263;
@@ -23,7 +23,6 @@ public class IOManager {
 
     List<Student> Students;
     int i = 0;
-    String name;
 
     /**
      * Default constructor to make an IOManager object
