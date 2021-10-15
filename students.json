@@ -1,0 +1,11 @@
+[
+  {"Student":
+  {"firstName":"Isaac","lastName":"Griffith"}
+  },
+  {"Student":
+  {"firstName":"Bob","lastName":"Sampson"}
+  },
+  {"Student":
+  {"firstName":"Sarah","lastName":"James"}
+  }
+]
