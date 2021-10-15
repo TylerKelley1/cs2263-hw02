@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Get greeting method 
 
-## [2.0.0] - 09-15-2021
+## [2.0.0] - 10-15-2021
 ### Added
 - Student, Course, IOmanager classes
 - Json file for student information
@@ -26,7 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Student names to the list 
 - Courses to the list when a student is selected in the GUI
 
-## [2.1.0] - 09-15-2021
+## [2.1.0] - 10-15-2021
 ### Added
 - New package for testing under the base package in both main and testing folders
 - Java.util.StringTokenizer
