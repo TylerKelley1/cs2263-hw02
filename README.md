@@ -1,5 +1,4 @@
-###CS2263 Homework 2
-# _CS2263_hw01_
+##CS2263 Homework 2
 
 ## Description:
 This is homework project makes the use of java fx to make a GUI that will load in students and when a student is selected from the javaFX lists the corresponding courses the student is taking will be loaded in to another list. The data of the students and the courses are made in a json file that is read in using gson and then properly tested.
