@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272a2658-0675-4810-8284-724bff8e5cae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/adapterTest/pushbackTokenizerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/adapter/PushbackTokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/adapter/PushbackTokenizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/adapterTest/pushbackTokenizerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/adapterTest/pushbackTokenizerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,7 @@
       <workItem from="1634014793076" duration="13956000" />
       <workItem from="1634081263296" duration="5346000" />
       <workItem from="1634290134946" duration="797000" />
-      <workItem from="1634332316110" duration="449000" />
+      <workItem from="1634332316110" duration="1310000" />
     </task>
     <servers />
   </component>

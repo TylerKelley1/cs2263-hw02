@@ -83,6 +83,7 @@ public class App extends Application{
                 studentsList.getItems().add("Students:");
                 //Students.readData("Student&Courses.json");
                 studentsList.getItems().add(Students.readData(filePath));
+                system.out.println("Test");
             }
         });
         //display all of the javaFX elements into a new scene
